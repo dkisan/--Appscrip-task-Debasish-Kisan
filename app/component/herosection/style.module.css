@@ -1,0 +1,71 @@
+
+.herosection{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0 80px;
+}
+
+.herosection h2{
+	font-family: "JetBrains Mono", monospace;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 60px;
+	margin: 2rem 0 1rem 0;
+}
+
+.herosection p{
+	font-family: "JetBrains Mono", monospace;
+	font-weight: 400;
+	text-align: center;
+	font-size: 22px;
+	line-height: 1.5;
+	margin: 1rem 0;
+	width: 700px;
+}
+
+
+@media (max-width: 768px) {
+	.herosection{
+		margin: 5px;
+	}
+
+	.herosection h2{
+		font-size: 32px;
+	}
+
+	.herosection p{
+		font-size: 20px;
+		width: 80%;
+		margin: auto;
+	}
+
+}
+
+
+
+  
+@media (max-width: 480px) {
+
+	.herosection{
+		margin: 5px;
+	}
+
+	.herosection h2{
+		font-size: 24px;
+	}
+
+	.herosection p{
+		font-size: 16px;
+		width: 100%;
+	}
+
+
+
+}
+
+
+
+

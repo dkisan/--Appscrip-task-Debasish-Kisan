@@ -1,0 +1,293 @@
+.footer {
+	padding: 20px 80px;
+}
+
+.bottomborder {
+	padding-bottom: 40px;
+	border-bottom: 1px solid white;
+}
+
+
+.container {
+	background-color: #111;
+	color: white;
+	margin: 0 auto;
+	padding: 20px 80px;
+}
+
+.footercontent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footerleft {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex: 2;
+}
+
+.footerright {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+}
+
+.footerleft h2,
+.footerright h3,
+.footersection h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.subscribeform {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	margin-right: 25dvw;
+}
+
+.subscribeform input {
+	padding: 10px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	margin-right: 10px;
+	flex: 1;
+}
+
+.subscribeform button {
+	padding: 10px 20px;
+	background: none;
+	color: #e5e5e57e;
+	border: 1px solid #e5e5e57e;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.currencyselect {
+	display: flex;
+	align-items: center;
+}
+
+.currencyselect img {
+	margin-right: 5px;
+}
+
+.currencyselect span {
+	margin-right: 10px;
+}
+
+.currencydropdown {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 10;
+}
+
+.currencyoption {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.currencyoption img {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+.currencyoption span {
+	margin-right: 10px;
+}
+
+.footercontent {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 50px;
+}
+
+.footersection {
+	flex: 1;
+	margin-right: 30px;
+}
+
+.footersection ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+}
+
+.footersection li {
+	margin-bottom: 10px;
+}
+
+.footersection a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footersection a:hover {
+	text-decoration: underline;
+}
+
+.socialicons {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.socialicons li {
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.socialicons li img {
+	width: 30px;
+	height: 30px;
+}
+
+.transaction {
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: 200;
+}
+
+.paymenticons {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.paymenticons li {
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.paymenticons img {
+	width: 40px;
+	height: 30px;
+}
+
+.copyright {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 14px;
+}
+
+
+
+
+@media (max-width: 768px) {
+	.footercontent {
+		flex-direction: column;
+	}
+
+	.footerleft,
+	.footerright {
+		flex: 1 0 auto;
+		margin-bottom: 20px;
+	}
+	
+	.footerleft{
+		padding-bottom: 20px;
+		border-bottom: 1px solid white;
+	}
+
+	.footersection {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		padding: 20px 20px;
+	}
+
+	.footercontent {
+		margin-top: 0px;
+	}
+
+	
+
+	.footerleft{
+		padding-bottom: 20px;
+		border-bottom: 1px solid white;
+	}
+
+	.footerright p {
+		font-weight: 300;
+		font-size: 14px;
+	}
+
+	
+	.footerleft h2,
+	.footerright h3,
+	.footersection h3 {
+		font-size: 18px;
+	}
+
+
+	.footerright h3:nth-of-type(2) {
+		margin-top: 20px;
+	}
+
+	.footersection:nth-child(1) ul,
+	.footersection:nth-child(2) ul,
+	.transaction {
+		display: none;
+	}
+
+	.footersection {
+		width: 100%;
+	}
+
+	.footersection:nth-child(1) h3,
+	.footersection:nth-child(2) h3 {
+		position: relative;
+		padding-bottom: 15px;
+		border-bottom: 1px solid white;
+	}
+
+	.footersection:nth-child(1) h3::after,
+	.footersection:nth-child(2) h3::after {
+		content: '\25BC';
+		position: absolute;
+		right: 0;
+	}
+
+	.footersection h3:hover+ul {
+		display: block;
+	}
+
+	.copyright {
+		margin-top: 0px;
+	}
+
+	.paymenticons {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.paymenticons img {
+		width: 100%;
+	}
+
+	.bottomborder {
+		padding-bottom: 0px;
+		border-bottom: 2px solid white;
+	}
+
+	.container:nth-child(2) {
+		padding: 0px 20px 20px 20px;
+	}
+
+}

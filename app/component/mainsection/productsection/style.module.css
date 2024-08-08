@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+	margin: 0 80px;
+}
+
+.filterMenuContainer{
+	display: block;
+}
+
+
+@media only screen and (max-width: 1024px){
+	.filterMenuContainer{
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.container {
+		margin: 10px;
+	}
+
+}

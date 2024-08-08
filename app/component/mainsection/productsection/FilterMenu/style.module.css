@@ -1,0 +1,65 @@
+.filtermenu {
+	width: 200px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+.flexrow {
+	display: flex;
+	gap: 5px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.flexcolumn {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.flexcontent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.padding {
+	padding: 10px 0;
+}
+
+.flexcolumn h4 {
+	font-weight: 400;
+}
+
+.flexcontent {
+	cursor: pointer;
+}
+
+.subMenu {
+	display: flex;
+	gap: 7px;
+}
+
+
+.occasionMenu,
+.idealMenu,
+.workMenu,
+.fabricMenu,
+.segmentMenu,
+.suitableMenu,
+.rawMenu,
+.patternMenu {
+	display: none;
+	font-weight: 400;
+}
+
+
+.idealfor:hover~.idealMenu,
+.occasionfor:hover~.occasionMenu,
+.workfor:hover~.workMenu,
+.fabricfor:hover~.fabricMenu,
+.segmentfor:hover~.segmentMenu,
+.suitablefor:hover~.suitableMenu,
+.rawfor:hover~.rawMenu,
+.patternfor:hover~.patternMenu {
+	display: block;
+}
