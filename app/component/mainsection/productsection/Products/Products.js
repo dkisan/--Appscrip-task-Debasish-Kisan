@@ -4,7 +4,8 @@ import styles from "./style.module.css"
 import Link from "next/link";
 
 async function getData() {
-    const response = await fetch(`${process.env.BASE_URL}/api`)
+    // const response = await fetch(`${process.env.BASE_URL}/api`)
+    const response = await fetch(`/api`)
     const data = await response.json()
     return data
 }
