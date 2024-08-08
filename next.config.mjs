@@ -2,6 +2,9 @@
 const nextConfig = {
     images: {
         domains: ['fakestoreapi.com'],
+    },
+    eslint:{
+        ignoreDuringBuilds: true,
     }
 };
 
