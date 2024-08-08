@@ -5,7 +5,8 @@ import Link from "next/link";
 
 async function getData() {
     // const response = await fetch(`${process.env.BASE_URL}/api`)
-    const response = await fetch(`/api`)
+    // const response = await fetch(`/api`)
+    const response = await fetch(`https://fakestoreapi.com/products`)
     const data = await response.json()
     return data
 }
